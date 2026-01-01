@@ -22,8 +22,8 @@ st.markdown("""
 # --- 2. INITIALIZATION ---
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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", # USE YOUR NEW KEY
-)
+    api_key=st.secrets["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"]) 
+
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
